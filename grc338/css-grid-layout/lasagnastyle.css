@@ -46,7 +46,7 @@ figcaption {
 figure {
 
     display:grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 4fr 1fr;
 }
 
 div.container {
@@ -101,7 +101,7 @@ p {
 
 main {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 0.5em;
     margin: 3em 2em 2em 3em;
 
