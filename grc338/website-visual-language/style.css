@@ -1,0 +1,200 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(images/home-background.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	max-width: 85em; 
+	margin: auto;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	max-width: 85em; 
+	margin: auto;
+	background-color: rgb(254, 254, 254);
+
+}
+
+/* >>> IMPORTANT: you have to change the wrap of the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class. And you need a div with the class container and all the other pages.  */
+
+address {
+color:rgb(220, 150, 190);
+font-family: "estratto-variable", sans-serif;
+font-variation-settings: "wght" 400;
+}
+
+address.cover {
+	color: rgb(254, 254, 254);
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: rgb(220, 150, 190);
+}
+
+main { 
+	padding: 3rem 3rem 5rem;
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 4fr 3fr;
+	background-color: rgb(254, 254, 254);
+	padding: 1rem 3rem ;
+	}
+
+h1 {
+	max-width: 10em;
+	}
+
+h2 {
+	font-size: 6em;
+	margin: 0rem 0rem 1.5rem;
+	font-family: "sweet-upright-script", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	}
+	
+h3 {
+	font-size: 2em;
+	margin: 2.5rem 0rem 1.5rem;
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+}
+
+
+a {
+	text-decoration: none;
+	}
+
+nav ul  {
+	text-align: right;
+	}
+	
+ul li 	{
+	list-style-type: none;
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+}
+
+figure {
+	margin-bottom: 1rem;
+}
+
+main.menu ul {
+		margin: 3rem 0rem;
+}	
+
+main.menu ul li {
+		margin: 2rem 0rem 0rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		font-family: "estratto-variable", sans-serif;
+		font-variation-settings: "wght" 400;
+}	
+
+p {
+	margin: 0rem 0rem 1rem;
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+	}
+	
+p.description {
+	grid-column: 1/3;
+	margin: 0em;
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+	}
+	
+p.price {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: rgb(220, 150, 190);
+	text-align: right;
+	margin: 0rem;
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+	}
+	
+nav ul li {
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	}
+	
+nav ul li a {
+	color: rgb(0, 0, 0);
+	padding: 0.5rem 0.5rem 0.25rem;
+	font-size: 3rem;
+	font-family: "sweet-upright-script", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	}
+
+nav ul li.selected a {
+	color: rgb(220, 150, 190);
+ }
+
+p.slogan {
+	font-size: 4em;
+	font-family: "sweet-upright-script", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	margin: 2.5rem 0rem 4rem;
+	color: rgb(254, 254, 254);	
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1rem 3rem;
+  background-color: rgb(254, 254, 254);
+}
+
+
+footer p {
+	margin: 0;
+	font-family: "estratto-variable", sans-serif;
+	font-variation-settings: "wght" 400;
+}
+
+article {
+	max-width: 40em;
+	margin: auto;
+}
+
+
+@media screen and (min-width: 60em) {
+
+main.menu ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0em 4em;
+}
+nav ul li{
+display: inline;
+padding: 0.25em;
+}
+
+nav ul {
+	padding: 0.75em 0.75em 0.5em;
+}
+    }
+
+
